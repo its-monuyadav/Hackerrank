@@ -18,6 +18,6 @@ int main() {
     Maxsum=totalsum-min;
     Minsum=totalsum-max;
     
-    cout<<"min sum ="<<minsum<<" & "<<"max sum ="<<maxsum<<endl;
+    cout<<"min sum ="<<Minsum<<" & "<<"max sum ="<<Maxsum<<endl;
     
 }
