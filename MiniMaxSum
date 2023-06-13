@@ -1,0 +1,23 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    long min=1000000,max=0,i,val, totalsum=0,minsum,maxsum;
+    int  arr[100]={8,5,3,9,2};
+
+    for(i=0;i<5;i++){
+        totalsum = totalsum+arr[i];
+        if(arr[i]< min){
+            min=arr[i];
+        }
+        if(arr[i]>max){
+            max=arr[i];
+        }
+    }
+    maxsum=totalsum-min;
+    minsum=totalsum-max;
+    
+    cout<<"min sum ="<<minsum<<" & "<<"max sum ="<<maxsum<<endl;
+    
+}
