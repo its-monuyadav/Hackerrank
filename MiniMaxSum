@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    long min=1000000,max=0,i,val, totalsum=0,minsum,maxsum;
+    long min=1000000,max=0,i,val, totalsum=0,Minsum,Maxsum;
     int  arr[100]={8,5,3,9,2};
 
     for(i=0;i<5;i++){
@@ -15,8 +15,8 @@ int main() {
             max=arr[i];
         }
     }
-    maxsum=totalsum-min;
-    minsum=totalsum-max;
+    Maxsum=totalsum-min;
+    Minsum=totalsum-max;
     
     cout<<"min sum ="<<minsum<<" & "<<"max sum ="<<maxsum<<endl;
     
