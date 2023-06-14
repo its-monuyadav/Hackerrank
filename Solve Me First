@@ -1,0 +1,8 @@
+int solveMeFirst(int a, int b) {
+ // Hint: Type return a+b; below:
+ int sum;
+ cin>>a>>b;
+ sum = a+b;
+ 
+ return a+b; 
+}
