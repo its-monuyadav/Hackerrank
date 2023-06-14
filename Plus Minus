@@ -1,0 +1,22 @@
+void plusMinus(vector<int> arr) {
+    float c1=0,c2=0,c3=0;
+    int i;
+    for(i=0;i<arr.size();i++){
+        if(arr[i]>0){
+            c1++;
+        }
+        if(arr[i]<0){
+            c2++;
+        }
+        if(arr[i]==0){
+            c3++;
+        }
+    }
+    float neg=c1/arr.size();
+    float pos=c2/arr.size();
+    float zero=c3/arr.size();
+    
+    cout<<neg<<endl;
+    cout<<pos<<endl;
+    cout<<zero<<endl;
+}
