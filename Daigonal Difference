@@ -1,0 +1,11 @@
+int diagonalDifference(vector<vector<int>> arr) {
+int n=arr.size(),diag=0,antidiag=0,sum=0,i;
+    for(i=0;i<n;i++)
+    {
+        diag+=arr[i][i];
+        antidiag+=arr[i][(n-1)-i];
+    }
+    sum=abs(diag-antidiag);
+    return sum;
+
+}
