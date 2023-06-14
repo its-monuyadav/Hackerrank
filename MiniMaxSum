@@ -21,3 +21,37 @@ int main() {
     cout<<"min sum ="<<Minsum<<" & "<<"max sum ="<<Maxsum<<endl;
     
 }
+
+
+OR
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i,val, totalsum=0,Minsum=1000000,Maxsum=0;
+    int  arr[5]={8,5,3,9,2};
+
+    for(i=0;i<5;i++){
+        totalsum = totalsum+arr[i];
+    }
+    cout<<totalsum<<endl;
+    
+    for(i=0;i<5;i++){
+        int SUM=totalsum-arr[i];
+      
+        if(SUM < Minsum){
+        Minsum = SUM ;
+       
+        }
+        if(SUM>Maxsum){
+
+        Maxsum=SUM;
+        }
+        
+    }
+    
+    
+    cout<<"min sum ="<<Minsum<<" & "<<"max sum ="<<Maxsum<<endl;
+    
+}
