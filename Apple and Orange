@@ -1,0 +1,23 @@
+  int count_apples=0,count_oranges=0;
+    
+    for (int i = 0; i < apples.size(); i++)
+    {
+        apples[i] = apples[i] + a;
+        if (apples[i] >= s && apples[i] <= t)
+        {
+            count_apples++;
+        }
+    }
+
+    for (int i = 0; i < oranges.size(); i++)
+    {
+        oranges[i] = oranges[i] + b;
+        if (oranges[i]>= s && oranges[i] <= t)
+        {
+            count_oranges++;
+        }
+    }
+
+    cout << count_apples << endl;
+    cout << count_oranges << endl;
+    
